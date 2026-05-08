@@ -3,12 +3,7 @@
 A machine learning app that tries to answer the question you're too afraid to ask.
 
 Note: The model is only as good as the data it was trained on. If it's wrong, maybe that's not the worst outcome.
-
-## What it does
-
-You rate a few things about yourself, her, and the situation. The model gives you an answer.
-That's it.
-
+[See and test the live demo](https://does-she-like-you.streamlit.app/app)
 ## How it works
 
 - Trained on a dataset with 6 features using Random Forest
