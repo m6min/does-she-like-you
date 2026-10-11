@@ -1,16 +1,16 @@
-# Does She Like You?
+# Does She Like You ?
 
-A machine learning app that tries to answer the question you're too afraid to ask.
+My first use of Random Forest Classifier.
 
-Note: The model is only as good as the data it was trained on. If it's wrong, maybe that's not the worst outcome.
-[See and test the live demo](https://does-she-like-you.streamlit.app/app)
+[Try it on Streamlit](https://does-she-like-you.streamlit.app/app)
+
 ## How it works
 
 - Trained on a dataset with 6 features using Random Forest
-- Achieves 85% accuracy on test data
 - Built with Streamlit for the interface
 
 ## Features
+
 
 | Feature | Description |
 |---|---|
@@ -36,20 +36,6 @@ python train.py
 **3. Run the app**
 ```bash
 streamlit run app/main.py
-```
-
-## Project Structure
-
-```
-project/
-├── data/
-│   └── data.csv
-├── models/
-│   └── brain.joblib
-├── app/
-│   └── main.py
-├── train.py
-└── requirements.txt
 ```
 
 ## Requirements

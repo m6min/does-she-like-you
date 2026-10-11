@@ -4,12 +4,11 @@ import joblib
 import pandas as pd
 import streamlit as st
 
-# Changing the color and bg-color of app
 st.markdown("""
 <style>
 .stApp {
-    background-color: #515d7d;
-    color: white;
+    background-color: #23262F;
+    color: #B6FF2E;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -20,8 +19,7 @@ def get_guess(input_df: pd.DataFrame) -> int:
     get_model = joblib.load(models_dir / "brain.joblib")
     return get_model.predict(input_df)[0]
 
-st.title("Lets find out she will like you or not based on:")
-st.metric(label="Model Accuracy on our dataset", value="85%")
+st.title("Lets see she will like you or not based on unrealistic science:")
 st.divider()
 columns = ["Look_Score_You","Look_Score_Her","Relationship_Score","Your_Social_Score","Her_Social_Score","Probability"]
 lsy = st.number_input("Rate yourself based on looks (?/10)", min_value=0, max_value=10, step=1)

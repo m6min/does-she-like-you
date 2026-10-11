@@ -3,7 +3,6 @@ from pathlib import Path
 import joblib
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 
@@ -17,7 +16,6 @@ def train_model(file_name: str) -> None:
     model = RandomForestClassifier(n_estimators=100, random_state=0)
     model.fit(x_train, y_train)
     guesses = model.predict(x_test)
-    # Accuracy is 0.85 for dataset
     """print(f"Accuracy: {accuracy_score(y_test, guesses)}")
     for index, (guess, real) in enumerate(zip(guesses.tolist(), y_test)):
         result = 'She likes you' if guess == 1 else 'Sorry... Find someone else.'
